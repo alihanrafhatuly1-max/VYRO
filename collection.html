@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VYRO — Collection</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#090909;color:#f4f4f4;font-family:Arial,sans-serif}
+a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;z-index:20;background:rgba(9,9,9,.94);backdrop-filter:blur(12px);border-bottom:1px solid #222;padding:18px 6%}
+.nav{max-width:1180px;margin:auto;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:25px;font-weight:900;letter-spacing:7px}.logo span,.green{color:#c6ff00}
+.back{font-size:12px;color:#999;border:1px solid #333;padding:10px 14px}.back:hover{color:#c6ff00;border-color:#c6ff00}
+.hero{padding:90px 6% 55px;max-width:1180px;margin:auto}
+.kicker{color:#c6ff00;letter-spacing:4px;font-size:12px}
+h1{font-size:clamp(55px,10vw,120px);line-height:.86;letter-spacing:-6px;margin-top:18px}
+.intro{max-width:600px;color:#777;font-size:17px;line-height:1.6;margin-top:25px}
+.grid{max-width:1180px;margin:auto;padding:30px 6% 100px;display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.card{background:linear-gradient(145deg,#181818,#0f0f0f);border:1px solid #292929;min-height:500px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;transition:.25s}
+.card:hover{transform:translateY(-5px);border-color:#c6ff00}
+.visual{height:350px;background:radial-gradient(circle at 50% 45%,#c6ff0018,transparent 42%),#101010;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.shape{background:#161616;border:2px solid #555;position:relative;filter:drop-shadow(0 20px 30px #000)}
+.shape:after{content:"VYRO";position:absolute;color:#c6ff00;font-weight:900;letter-spacing:3px;font-size:12px;left:50%;top:50%;transform:translate(-50%,-50%)}
+.jacket{width:170px;height:230px;clip-path:polygon(25% 0,40% 9%,60% 9%,75% 0,100% 25%,82% 42%,73% 31%,73% 100%,27% 100%,27% 31%,18% 42%,0 25%)}
+.shirt{width:175px;height:195px;clip-path:polygon(25% 0,40% 10%,60% 10%,75% 0,100% 25%,82% 43%,70% 30%,70% 100%,30% 100%,30% 30%,18% 43%,0 25%)}
+.pants{width:150px;height:260px;clip-path:polygon(12% 0,88% 0,72% 50%,62% 100%,51% 100%,50% 52%,49% 100%,38% 100%,28% 50%)}
+.shorts{width:220px;height:150px;clip-path:polygon(12% 0,88% 0,100% 100%,56% 100%,50% 48%,44% 100%,0 100%)}
+.hoodie{width:185px;height:220px;clip-path:polygon(20% 7%,34% 0,42% 13%,58% 13%,66% 0,80% 7%,100% 27%,84% 44%,75% 34%,75% 100%,25% 100%,25% 34%,16% 44%,0 27%)}
+.info{padding:22px 4px 4px}.name{font-size:24px;font-weight:800}.meta{color:#666;font-size:11px;letter-spacing:2px;margin-top:8px}.price{color:#c6ff00;font-weight:800;margin-top:18px}
+.cta{max-width:1180px;margin:0 auto 80px;padding:55px 6%;background:#c6ff00;color:#080808}
+.cta h2{font-size:clamp(38px,7vw,72px);line-height:.9;letter-spacing:-3px}.cta p{margin-top:15px;max-width:500px;line-height:1.5}.cta a{display:inline-block;margin-top:25px;background:#090909;color:#fff;padding:15px 22px;font-weight:800}
+footer{text-align:center;border-top:1px solid #222;padding:30px;color:#555;font-size:11px}
+@media(max-width:700px){.grid{grid-template-columns:1fr;padding-top:10px}.card{min-height:440px}.visual{height:290px}.hero{padding-top:65px}h1{letter-spacing:-4px}}
+</style>
+</head>
+<body>
+<header><div class="nav"><a href="index.html" class="logo">VY<span>R</span>O</a><a href="index.html" class="back">← НА ГЛАВНУЮ</a></div></header>
+<main>
+<section class="hero"><div class="kicker">VYRO / APEX 1.0 / COLLECTION</div><h1>BUILT TO<br><span class="green">MOVE.</span></h1><p class="intro">Первая коллекция VYRO. Минималистичная спортивная форма для тренировок, движения и собственного стиля.</p></section>
+<section class="grid">
+<article class="card"><div class="visual"><div class="shape jacket"></div></div><div class="info"><div class="name">Training Jacket</div><div class="meta">APEX 1.0 / OUTERWEAR</div><div class="price">VYRO APEX</div></div></article>
+<article class="card"><div class="visual"><div class="shape shirt"></div></div><div class="info"><div class="name">Performance T-Shirt</div><div class="meta">APEX 1.0 / TOP</div><div class="price">VYRO APEX</div></div></article>
+<article class="card"><div class="visual"><div class="shape pants"></div></div><div class="info"><div class="name">Training Pants</div><div class="meta">APEX 1.0 / BOTTOM</div><div class="price">VYRO APEX</div></div></article>
+<article class="card"><div class="visual"><div class="shape shorts"></div></div><div class="info"><div class="name">Training Shorts</div><div class="meta">APEX 1.0 / BOTTOM</div><div class="price">VYRO APEX</div></div></article>
+<article class="card"><div class="visual"><div class="shape hoodie"></div></div><div class="info"><div class="name">Core Hoodie</div><div class="meta">APEX 1.0 / ESSENTIALS</div><div class="price">VYRO APEX</div></div></article>
+</section>
+<section class="cta"><h2>DON'T FOLLOW<br>THE <span>STANDARD.</span></h2><p>VYRO — для тех, кто выбирает свой темп. APEX 1.0 — только начало.</p><a href="index.html">← ВЕРНУТЬСЯ</a></section>
+</main>
+<footer>© 2026 VYRO — MOVE DIFFERENT. BE VYRO.</footer>
+</body>
+</html>
